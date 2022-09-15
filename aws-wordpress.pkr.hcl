@@ -26,7 +26,7 @@ build {
 }
   provisioner "shell" {
     inline = ["sudo cp /tmp/wordpress.conf /etc/nginx/sites-available/",
-    "sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/",
+    "sudo ln -s /etc/nginx/sites-available/wordpress.conf /etc/nginx/sites-enabled/",
     "sudo unlink /etc/nginx/sites-enabled/default"]
 }
     }
